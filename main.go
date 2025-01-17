@@ -14,7 +14,7 @@ var db *sql.DB
 
 func initDB() {
 	var err error
-	dsn := "admin:Hola1244@tcp(<18.212.223.216>:3306)/reservation_db"
+	dsn := "admin:Hola1244@tcp(18.212.223.216:3306)/reservation_db"
 	db, err = sql.Open("mysql", dsn)
 	if err != nil {
 		log.Fatal("Error al conectar a la base de datos:", err)
