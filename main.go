@@ -16,7 +16,7 @@ var db *sql.DB
 func initDB() {
 	var err error
 	// Usamos una IP pública o privada de tu instancia de MySQL, asegúrate de que esté accesible
-	dsn := "admin:Hola1244@tcp(18.212.223.216:3306)/reservation_db"
+	dsn := "admin:Hola1244@tcp(44.209.27.157:3306)/reservation_db"
 	db, err = sql.Open("mysql", dsn)
 	if err != nil {
 		log.Fatal("Error al conectar a la base de datos:", err)
